@@ -8,42 +8,6 @@ import java.util.List;
 
 public class UserServiceImpl implements UserService {
 
-
-    /*public UserServiceImpl() {
-        this.userDao = new UserDaoJDBCImpl() {
-            @Override
-            public void dropUsersTable() {
-                UserServiceImpl.this.dropUsersTable();
-            }
-
-            @Override
-            public void removeUserById(long id) {
-                UserServiceImpl.this.removeUserById(id);
-            }
-
-            @Override
-            public void saveUser(String name, String lastName, byte age) {
-                UserServiceImpl.this.saveUser(name,lastName,age);
-            }
-
-            @Override
-            public void createUsersTable() {
-                UserServiceImpl.this.createUsersTable();
-            }
-
-            @Override
-            public void cleanUsersTable() {
-                UserServiceImpl.this.cleanUsersTable();
-            }
-
-            @Override
-            public List<User> getAllUsers() {
-                return UserServiceImpl.this.getAllUsers();
-            }
-        };
-    }
-
-     */
     UserDao userDao = new UserDaoJDBCImpl();
 
     public void createUsersTable() {
